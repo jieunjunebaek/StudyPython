@@ -1,7 +1,7 @@
 # 주석이래
 # 문자열 표현방법
 print('hello, world')
-print ("hello, world")  ##쌍따옴표도 허용되는 파이썬
+print("hello, world")  ##쌍따옴표도 허용되는 파이썬
 print('''hello, world''')
 
 # 숫자연산 출력
