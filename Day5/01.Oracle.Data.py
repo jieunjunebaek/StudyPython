@@ -22,12 +22,12 @@ cur = conn.cursor()
 
 
 try:
-    for row in cur.execute('SELECT * FROM emp'):
-        print(row)
+    # for row in cur.execute('SELECT * FROM emp'):
+    #     print(row)
 
-    # cur.execute('SELECT COUNT(*), FROM emp')
-    # result = cur.fetchone()
-    # print(result)
+    cur.execute('SELECT COUNT(*) FROM emp')
+    result = cur.fetchone()
+    print(result)
 
 except cx_Oracle.DatabaseError as e:
     print(f'쿼리문이 잘못되었습니다. 23번라인 확인요 : {e}')
